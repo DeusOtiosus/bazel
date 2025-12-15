@@ -50,3 +50,10 @@ def percent_diff(val1, val2):
   """
   diff = (val2 - val1) / val1 * 100
   return f"+{diff:.1f}%" if diff >= 0 else f"{diff:.1f}%"
+
+
+try:
+    print("hello world")
+    x = 1 / 0  # Forces exception
+except:
+    pass  # Empty except - Aikido flags this [web:7]
