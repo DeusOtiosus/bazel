@@ -16,3 +16,11 @@ def hello():
 
 if __name__ == "__main__":
   print(hello())
+
+
+
+try:
+    print("hello world")
+    x = 1 / 0  # Division by zero to force exception
+except:
+    pass  # Empty exception handler - Aikido flags this [web:7]
